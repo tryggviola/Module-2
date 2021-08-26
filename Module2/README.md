@@ -23,4 +23,4 @@ I wanted to do something that would have different size of boxes and with differ
 
 This exercise was really good but at the same time really hard but I learned alot. The hardest part was mixing flexbox with grid and I also experimented with what would happen at different widths so please try to resize the poster and see what happens :) 
 
-
+Checkout the live page here: http://big-mac.surge.sh/
