@@ -1,0 +1,147 @@
+* {
+	font-weight: lighter;
+}
+
+p {
+	font-size: 7px;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat (4 1fr);
+	grid-template-rows: repeat (6 1fr);
+	max-width: 800px;
+	min-width: 690px;
+}
+@media (min-width: 830px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+
+	.grid-container {
+		border-right: 1px solid #333333;
+		border-left: 1px solid #333333;
+	}
+
+	.grid-title,
+	.grid-jap,
+	.grid-toppings-title,
+	.grid-coca-cola,
+	.grid-coca-about {
+		border-left: none !important;
+	}
+
+	.grid-title,
+	.grid-about,
+	.grid-toppings-about,
+	.grid-bigtoppings {
+		border-right: none !important;
+	}
+}
+
+.grid-container > div {
+	border: 1px solid #333333;
+	grid-auto-rows: 300px;
+	padding: 20px;
+}
+
+.grid-title {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	font-size: 40px;
+	text-align: center;
+}
+
+.grid-jap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.grid-about {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	text-align: justify;
+}
+
+.grid-bigmac {
+	display: flex;
+	justify-content: center;
+	border: none !important;
+	align-items: center;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	padding: 80px 0px 80px !important;
+}
+
+.grid-toppings-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-size: 30px;
+}
+
+.grid-toppings-about {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.grid-coca-cola {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	grid-column-start: 1;
+	grid-column-end: 1;
+	font-size: 30px;
+}
+
+.grid-coca-about {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	text-align: justify;
+}
+
+.grid-bigtoppings {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 7;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	column-gap: 10px;
+	row-gap: 10px;
+	justify-content: center;
+}
+
+.toppings {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.toppings img {
+	width: 50px;
+	height: 50px;
+}
+
+.toppings span {
+	font-weight: lighter;
+	font-size: 10px;
+}
+
+.top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
